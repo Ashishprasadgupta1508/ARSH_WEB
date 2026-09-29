@@ -1,0 +1,1151 @@
+.dashboard {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.pageHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.breadcrumb {
+  margin-bottom: 8px;
+  color: #8794a6;
+  font-size: 10px;
+}
+
+.breadcrumb span {
+  margin: 0 6px;
+  color: #c3cbd4;
+}
+
+.pageHeader h1 {
+  margin: 0;
+  color: #162236;
+  font-size: 29px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.pageHeader p {
+  margin: 7px 0 0;
+  color: #718096;
+  font-size: 12px;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9e1e9;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.headerActions button {
+  height: 32px;
+  min-width: 43px;
+  padding: 0 10px;
+  border: 0;
+  border-right: 1px solid #e5eaf0;
+  background: #fff;
+  color: #64758a;
+  font-size: 10px;
+}
+
+.headerActions button:last-child {
+  border-right: 0;
+}
+
+.headerActions .timeButtonActive {
+  background: #173f63;
+  color: #fff;
+}
+
+/* =========================================================
+   STATUS CARDS
+========================================================= */
+
+.statusGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.statusCard {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid #dce4ec;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.statusIcon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.statusIcon.blue {
+  color: #2474d2;
+  background: #edf5ff;
+}
+
+.statusIcon.orange {
+  color: #d68b0b;
+  background: #fff6e8;
+}
+
+.statusIcon.purple {
+  color: #7657d7;
+  background: #f2efff;
+}
+
+.statusIcon.green {
+  color: #22a06b;
+  background: #ecfaf3;
+}
+
+.statusCardContent {
+  min-width: 0;
+}
+
+.statusCardContent > span {
+  display: block;
+  color: #8492a4;
+  font-size: 8px;
+}
+
+.statusCardContent strong {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 5px;
+  color: #28384e;
+  font-size: 12px;
+}
+
+.statusCardContent small {
+  display: block;
+  margin-top: 4px;
+  overflow: hidden;
+  color: #9aa5b3;
+  font-size: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.greenDot {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #22a464;
+}
+
+/* =========================================================
+   PANELS
+========================================================= */
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(380px, 0.85fr);
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.panel {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #dce4ec;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.panelHeader {
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 13px 17px;
+  border-bottom: 1px solid #edf1f4;
+}
+
+.panelHeader h2 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  color: #26364c;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.panelHeader h2 svg {
+  color: #8796a8;
+}
+
+.panelHeader p {
+  margin: 4px 0 0;
+  color: #8997a8;
+  font-size: 9px;
+}
+
+.textButton {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #2474d2;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   FORECAST CONTROLS
+========================================================= */
+
+.forecastControls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 13px 17px;
+  border-bottom: 1px solid #edf1f4;
+}
+
+.forecastControls > div {
+  min-width: 0;
+}
+
+.forecastControls label {
+  display: block;
+  margin-bottom: 5px;
+  color: #8492a4;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.forecastControls button {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  padding: 0 8px;
+  border: 1px solid #d9e1e9;
+  border-radius: 4px;
+  background: #fff;
+  color: #43566d;
+  font-size: 9px;
+}
+
+.forecastControls button span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* =========================================================
+   MAP
+========================================================= */
+
+.mapContainer {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+.mapBackground {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 52% 42%,
+      rgba(250, 203, 102, 0.7) 0,
+      rgba(250, 203, 102, 0.3) 17%,
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 35% 70%,
+      rgba(52, 174, 118, 0.45) 0,
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #d8edf5 0%,
+      #eef6f3 48%,
+      #d9ebf2 100%
+    );
+}
+
+.mapBackground::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.38;
+  background-image:
+    linear-gradient(
+      rgba(102, 130, 145, 0.2) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(102, 130, 145, 0.2) 1px,
+      transparent 1px
+    );
+  background-size: 45px 45px;
+}
+
+.mapGlowOne,
+.mapGlowTwo,
+.mapGlowThree {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(22px);
+}
+
+.mapGlowOne {
+  width: 190px;
+  height: 150px;
+  left: 23%;
+  top: 8%;
+  background: rgba(238, 108, 61, 0.38);
+}
+
+.mapGlowTwo {
+  width: 190px;
+  height: 170px;
+  left: 43%;
+  top: 25%;
+  background: rgba(244, 181, 58, 0.36);
+}
+
+.mapGlowThree {
+  width: 230px;
+  height: 160px;
+  left: 27%;
+  top: 53%;
+  background: rgba(44, 167, 109, 0.35);
+}
+
+.mapShape {
+  position: absolute;
+  inset: 0;
+}
+
+/*
+  Stylised India silhouette.
+  This is intentionally lightweight so the page does not
+  depend on an external map package before API/map integration.
+*/
+
+.indiaShape {
+  position: absolute;
+  left: 38%;
+  top: 15%;
+  width: 180px;
+  height: 260px;
+  transform: rotate(7deg);
+  background: linear-gradient(
+    145deg,
+    #ec6d3e 0%,
+    #f3a83f 28%,
+    #65b879 62%,
+    #328fbd 100%
+  );
+  clip-path: polygon(
+    25% 0%,
+    45% 3%,
+    55% 13%,
+    69% 18%,
+    76% 30%,
+    87% 38%,
+    81% 49%,
+    91% 60%,
+    79% 67%,
+    74% 78%,
+    64% 87%,
+    57% 100%,
+    47% 87%,
+    38% 76%,
+    28% 69%,
+    20% 58%,
+    24% 48%,
+    16% 38%,
+    20% 27%,
+    12% 17%,
+    18% 9%
+  );
+  box-shadow: 0 12px 25px rgba(35, 80, 105, 0.18);
+}
+
+.indiaShape::before,
+.indiaShape::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(
+      90deg,
+      transparent 32%,
+      rgba(255, 255, 255, 0.5) 32.5%,
+      transparent 33%
+    ),
+    linear-gradient(
+      25deg,
+      transparent 42%,
+      rgba(255, 255, 255, 0.42) 42.5%,
+      transparent 43%
+    ),
+    linear-gradient(
+      -15deg,
+      transparent 58%,
+      rgba(255, 255, 255, 0.4) 58.5%,
+      transparent 59%
+    );
+  opacity: 0.75;
+}
+
+.mapState {
+  position: absolute;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.stateOne {
+  width: 45px;
+  height: 55px;
+  left: 40px;
+  top: 43px;
+}
+
+.stateTwo {
+  width: 55px;
+  height: 48px;
+  left: 84px;
+  top: 74px;
+}
+
+.stateThree {
+  width: 65px;
+  height: 52px;
+  left: 39px;
+  top: 102px;
+}
+
+.stateFour {
+  width: 58px;
+  height: 58px;
+  left: 87px;
+  top: 125px;
+}
+
+.stateFive {
+  width: 48px;
+  height: 62px;
+  left: 52px;
+  top: 153px;
+}
+
+.stateSix {
+  width: 43px;
+  height: 45px;
+  left: 89px;
+  top: 189px;
+}
+
+.countryLabel,
+.seaLabel {
+  position: absolute;
+  color: rgba(43, 68, 84, 0.58);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.pakistan {
+  left: 24%;
+  top: 30%;
+}
+
+.nepal {
+  left: 48%;
+  top: 23%;
+}
+
+.china {
+  left: 60%;
+  top: 15%;
+}
+
+.bangladesh {
+  left: 63%;
+  top: 45%;
+}
+
+.myanmar {
+  left: 73%;
+  top: 56%;
+}
+
+.sriLanka {
+  left: 52%;
+  bottom: 12%;
+}
+
+.seaLabel {
+  color: rgba(63, 104, 128, 0.62);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.arabianSea {
+  left: 10%;
+  bottom: 30%;
+}
+
+.bayBengal {
+  right: 13%;
+  bottom: 29%;
+}
+
+.zoomControls {
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cfdce3;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 7px rgba(29, 57, 76, 0.08);
+}
+
+.zoomControls button {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-bottom: 1px solid #e5ebef;
+  background: #fff;
+  color: #50657a;
+  font-size: 17px;
+}
+
+.zoomControls button:last-child {
+  border-bottom: 0;
+}
+
+.layerButton {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #cfdce3;
+  border-radius: 4px;
+  background: #fff;
+  color: #53697e;
+  box-shadow: 0 2px 7px rgba(29, 57, 76, 0.08);
+}
+
+.mapInfo {
+  position: absolute;
+  left: 13px;
+  bottom: 13px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border: 1px solid rgba(210, 222, 230, 0.9);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.91);
+  color: #43586e;
+  font-size: 8px;
+  box-shadow: 0 2px 8px rgba(29, 57, 76, 0.08);
+}
+
+.mapInfo strong {
+  font-weight: 600;
+}
+
+.mapInfo span {
+  color: #8796a7;
+}
+
+.temperatureLegend {
+  position: absolute;
+  right: 13px;
+  top: 73px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.temperatureLegend > strong {
+  position: absolute;
+  right: 22px;
+  top: -18px;
+  color: #607489;
+  font-size: 9px;
+}
+
+.legendScale {
+  width: 10px;
+  height: 185px;
+  border-radius: 5px;
+  background: linear-gradient(
+    to bottom,
+    #dc3e36,
+    #ef8d37,
+    #f4c54f,
+    #71ba70,
+    #46a5b8,
+    #3479ae
+  );
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.legendNumbers {
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #65798d;
+  font-size: 7px;
+}
+
+/* =========================================================
+   LATEST FORECAST
+========================================================= */
+
+.completedBadge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  border: 1px solid #b9e6cd;
+  border-radius: 4px;
+  background: #effaf4;
+  color: #168151;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.forecastMetrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 16px 17px;
+  gap: 9px;
+}
+
+.forecastMetric {
+  padding: 12px;
+  border: 1px solid #edf1f4;
+  border-radius: 5px;
+}
+
+.forecastMetricIcon {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 19px;
+}
+
+.forecastMetricIcon.blue {
+  color: #2474d2;
+  background: #edf5ff;
+}
+
+.forecastMetricIcon.green {
+  color: #22a06b;
+  background: #ecfaf3;
+}
+
+.forecastMetricIcon.purple {
+  color: #7657d7;
+  background: #f2efff;
+}
+
+.forecastMetric > span {
+  display: block;
+  color: #8492a4;
+  font-size: 8px;
+}
+
+.forecastMetric > strong {
+  display: block;
+  margin-top: 5px;
+  color: #1d2d43;
+  font-size: 21px;
+}
+
+.forecastMetric > strong small {
+  color: #8795a6;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.forecastMetric > small {
+  display: block;
+  margin-top: 4px;
+  color: #99a4b1;
+  font-size: 7px;
+}
+
+.forecastDetails {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr 1.2fr;
+  gap: 0;
+  padding: 13px 17px;
+  border-top: 1px solid #edf1f4;
+}
+
+.forecastDetails > div {
+  min-width: 0;
+  padding: 0 12px;
+  border-right: 1px solid #edf1f4;
+}
+
+.forecastDetails > div:first-child {
+  padding-left: 0;
+}
+
+.forecastDetails > div:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.forecastDetails span {
+  display: block;
+  color: #8b98a9;
+  font-size: 7px;
+}
+
+.forecastDetails strong {
+  display: block;
+  margin-top: 5px;
+  color: #42566d;
+  font-size: 9px;
+}
+
+.modelDots {
+  display: flex !important;
+  align-items: center;
+  gap: 4px;
+}
+
+.modelDots i {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.modelDots em {
+  margin-left: 3px;
+  color: #556a80;
+  font-size: 8px;
+  font-style: normal;
+}
+
+.statusCompleted {
+  display: flex !important;
+  align-items: center;
+  gap: 4px;
+  color: #168151 !important;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.tableWrapper,
+.smallTableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 10px 15px;
+  background: #f8fafc;
+  color: #8492a4;
+  font-size: 8px;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 11px 15px;
+  border-top: 1px solid #edf1f4;
+  color: #52657b;
+  font-size: 9px;
+}
+
+.tableModel {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #3c5067;
+  font-weight: 600;
+}
+
+.tableModel i {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.blendedRow {
+  background: #f2f6fa;
+}
+
+.blendedRow td {
+  color: #183652;
+  font-weight: 650;
+}
+
+.positive {
+  color: #d55353 !important;
+}
+
+.negative {
+  color: #2474d2 !important;
+}
+
+/* =========================================================
+   BOTTOM GRID
+========================================================= */
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.15fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.weightsContent {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 15px;
+}
+
+.donutChart {
+  position: relative;
+  width: 145px;
+  height: 145px;
+  flex-shrink: 0;
+}
+
+.donutLabel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+.donutLabel strong {
+  color: #344960;
+  font-size: 12px;
+}
+
+.donutLabel span {
+  margin-top: 2px;
+  color: #8997a8;
+  font-size: 8px;
+}
+
+.weightList {
+  flex: 1;
+}
+
+.weightItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid #edf1f4;
+  color: #53677d;
+  font-size: 9px;
+}
+
+.weightItem span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.weightItem i {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.weightItem strong {
+  color: #32475e;
+  font-size: 9px;
+}
+
+.strategyLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 9px;
+  font-size: 8px;
+}
+
+.strategyLine span {
+  color: #8996a7;
+}
+
+.strategyLine strong {
+  color: #40546a;
+}
+
+/* =========================================================
+   SMALL TABLE
+========================================================= */
+
+.smallTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.smallTable th {
+  padding: 9px 7px;
+  background: #f8fafc;
+  color: #8a98a9;
+  font-size: 7px;
+  text-align: left;
+}
+
+.smallTable td {
+  padding: 9px 7px;
+  border-top: 1px solid #edf1f4;
+  color: #53677d;
+  font-size: 8px;
+}
+
+/* =========================================================
+   EVENTS
+========================================================= */
+
+.eventsList {
+  padding: 4px 15px 8px;
+}
+
+.eventRow {
+  display: grid;
+  grid-template-columns: 27px 1fr auto;
+  grid-template-areas:
+    "icon main severity"
+    "icon main time";
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 3px;
+  min-height: 58px;
+  border-bottom: 1px solid #edf1f4;
+}
+
+.eventRow:last-child {
+  border-bottom: 0;
+}
+
+.eventIcon {
+  grid-area: icon;
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  background: #fff6e7;
+  color: #c98916;
+}
+
+.eventMain {
+  grid-area: main;
+  min-width: 0;
+}
+
+.eventMain strong {
+  display: block;
+  color: #3f5269;
+  font-size: 9px;
+}
+
+.eventMain span {
+  display: block;
+  margin-top: 3px;
+  color: #8b98a8;
+  font-size: 7px;
+}
+
+.severity {
+  grid-area: severity;
+  justify-self: end;
+  padding: 4px 6px;
+  border-radius: 3px;
+  font-size: 6px;
+  font-weight: 700;
+}
+
+.moderate {
+  background: #fff2d7;
+  color: #b47712;
+}
+
+.severe {
+  background: #ffe3e1;
+  color: #c8443d;
+}
+
+.eventTime {
+  grid-area: time;
+  justify-self: end;
+  color: #8b98a8;
+  font-size: 7px;
+}
+
+/* =========================================================
+   DISCLAIMER
+========================================================= */
+
+.disclaimer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 11px;
+  margin-top: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #f0dfb9;
+  border-radius: 5px;
+  background: #fff9ed;
+  color: #a87518;
+  font-size: 8px;
+}
+
+.disclaimer strong {
+  font-weight: 700;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1250px) {
+  .statusGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bottomGrid > :last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 900px) {
+  .forecastDetails {
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+  }
+
+  .forecastDetails > div {
+    padding: 0;
+    border-right: 0;
+  }
+
+  .forecastMetrics {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomGrid > :last-child {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .pageHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .statusGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .headerActions {
+    width: 100%;
+  }
+
+  .headerActions button {
+    flex: 1;
+  }
+
+  .forecastControls {
+    grid-template-columns: 1fr;
+  }
+
+  .mapContainer {
+    height: 340px;
+  }
+
+  .weightsContent {
+    flex-direction: column;
+  }
+
+  .donutChart {
+    width: 180px;
+    height: 180px;
+  }
+
+  .forecastDetails {
+    grid-template-columns: 1fr;
+  }
+}

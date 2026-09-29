@@ -1,0 +1,829 @@
+.page {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.pageHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  margin-bottom: 9px;
+  color: #8795a7;
+  font-size: 10px;
+}
+
+.breadcrumb span {
+  margin: 0 6px;
+  color: #c5ccd4;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.titleIcon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border: 1px solid #d9e5f1;
+  border-radius: 7px;
+  background: #eef5fb;
+  color: #245f91;
+}
+
+.pageHeader h1 {
+  margin: 0;
+  color: #17263b;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.pageHeader p {
+  margin: 5px 0 0;
+  color: #748398;
+  font-size: 11px;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.secondaryButton,
+.primaryButton {
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 12px;
+  border-radius: 5px;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.secondaryButton {
+  border: 1px solid #d8e1ea;
+  background: #fff;
+  color: #52667c;
+}
+
+.primaryButton {
+  border: 1px solid #17283c;
+  background: #17283c;
+  color: #fff;
+}
+
+/* =========================================================
+   STATUS BANNER
+========================================================= */
+
+.statusBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 15px 17px;
+  margin-bottom: 15px;
+  border: 1px solid #c9dfd5;
+  border-radius: 7px;
+  background: #f7fcf9;
+}
+
+.statusLeft {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.statusIcon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background: #e4f7ec;
+  color: #219b68;
+}
+
+.statusLeft span {
+  display: block;
+  color: #7e9b8d;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.statusLeft strong {
+  display: block;
+  margin-top: 2px;
+  color: #21805a;
+  font-size: 13px;
+}
+
+.statusLeft p {
+  margin: 3px 0 0;
+  color: #82988d;
+  font-size: 8px;
+}
+
+.statusMetrics {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 25px;
+}
+
+.statusMetrics span {
+  display: block;
+  color: #879a90;
+  font-size: 7px;
+}
+
+.statusMetrics strong {
+  display: block;
+  margin-top: 4px;
+  color: #3e5c4e;
+  font-size: 9px;
+}
+
+/* =========================================================
+   PANEL
+========================================================= */
+
+.panel {
+  overflow: hidden;
+  margin-bottom: 14px;
+  border: 1px solid #dce4ec;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.panelHeader {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 12px 15px;
+  border-bottom: 1px solid #edf1f4;
+}
+
+.panelHeader h2 {
+  margin: 0;
+  color: #27394f;
+  font-size: 14px;
+}
+
+.panelHeader p {
+  margin: 4px 0 0;
+  color: #8b98a8;
+  font-size: 8px;
+}
+
+.pipelineActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.enabledBadge,
+.activeTag,
+.smallTag,
+.healthBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 7px;
+  border-radius: 4px;
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.enabledBadge {
+  background: #eaf8f1;
+  color: #23845d;
+}
+
+.enabledBadge i,
+.healthBadge i {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #25a56d;
+}
+
+.activeTag {
+  background: #eaf8f1;
+  color: #23845d;
+}
+
+.smallTag {
+  background: #f3f6f9;
+  color: #77879a;
+}
+
+.healthBadge {
+  background: #eaf8f1;
+  color: #27835d;
+}
+
+.settingsButton {
+  height: 29px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 9px;
+  border: 1px solid #dce4ec;
+  border-radius: 4px;
+  background: #fff;
+  color: #63768a;
+  font-size: 8px;
+}
+
+/* =========================================================
+   PIPELINE
+========================================================= */
+
+.pipeline {
+  padding: 16px 18px 18px;
+}
+
+.stageWrapper {
+  position: relative;
+}
+
+.stage {
+  min-height: 82px;
+  display: grid;
+  grid-template-columns: 31px 38px minmax(0, 1fr) 25px;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 11px;
+  border: 1px solid #e0e7ed;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.stage:hover {
+  border-color: #cbd8e4;
+  background: #fbfdff;
+}
+
+.stageNumber {
+  width: 31px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.stageNumber.blue {
+  background: #edf5ff;
+  color: #2877d1;
+}
+
+.stageNumber.green {
+  background: #eaf8f1;
+  color: #279867;
+}
+
+.stageNumber.purple {
+  background: #f2edff;
+  color: #7655cf;
+}
+
+.stageNumber.orange {
+  background: #fff3e4;
+  color: #d3851d;
+}
+
+.stageIcon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+}
+
+.stageIcon.blue {
+  background: #edf5ff;
+  color: #2877d1;
+}
+
+.stageIcon.green {
+  background: #eaf8f1;
+  color: #279867;
+}
+
+.stageIcon.purple {
+  background: #f2edff;
+  color: #7655cf;
+}
+
+.stageIcon.orange {
+  background: #fff3e4;
+  color: #d3851d;
+}
+
+.stageMain {
+  min-width: 0;
+}
+
+.stageHeading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.stageHeading h3 {
+  margin: 0;
+  color: #30435a;
+  font-size: 11px;
+}
+
+.stageHeading p {
+  margin: 3px 0 0;
+  color: #909dac;
+  font-size: 7px;
+}
+
+.completedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  border-radius: 3px;
+  background: #eaf8f1;
+  color: #27835d;
+  font-size: 6px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.stageBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  color: #8a99a8;
+  font-size: 7px;
+}
+
+.stageBottom > div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #687b8e;
+  font-weight: 600;
+}
+
+.progressTrack {
+  height: 3px;
+  overflow: hidden;
+  margin-top: 7px;
+  border-radius: 3px;
+  background: #edf1f4;
+}
+
+.progressTrack span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: #2bb47c;
+}
+
+.stageMenu {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  background: #fff;
+  color: #7b8b9c;
+}
+
+.connector {
+  height: 15px;
+  position: relative;
+}
+
+.connector::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 31px;
+  border-left: 1px dashed #cbd5df;
+}
+
+.connector span {
+  position: absolute;
+  bottom: -1px;
+  left: 27px;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid #cbd5df;
+  border-bottom: 1px solid #cbd5df;
+  transform: rotate(45deg);
+  background: #fff;
+}
+
+/* =========================================================
+   CONFIG GRID
+========================================================= */
+
+.configGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.modelList {
+  padding: 5px 15px 9px;
+}
+
+.modelRow {
+  min-height: 52px;
+  display: grid;
+  grid-template-columns: 9px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #edf1f4;
+}
+
+.modelRow:last-child {
+  border-bottom: 0;
+}
+
+.modelDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.modelDot.ecmwf {
+  background: #2877d8;
+}
+
+.modelDot.gfs {
+  background: #e4a21e;
+}
+
+.modelDot.icon {
+  background: #2aa16c;
+}
+
+.modelDot.jma {
+  background: #7857cf;
+}
+
+.modelRow strong {
+  display: block;
+  color: #42566d;
+  font-size: 9px;
+}
+
+.modelRow small {
+  display: block;
+  margin-top: 3px;
+  color: #9aa5b1;
+  font-size: 7px;
+}
+
+.modelStatus {
+  padding: 4px 6px;
+  border-radius: 3px;
+  background: #eaf8f1;
+  color: #28845e;
+  font-size: 6px;
+  font-weight: 700;
+}
+
+.configList {
+  padding: 5px 15px 9px;
+}
+
+.configRow {
+  min-height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid #edf1f4;
+}
+
+.configRow:last-child {
+  border-bottom: 0;
+}
+
+.configRow span {
+  color: #8998a8;
+  font-size: 8px;
+}
+
+.configRow strong {
+  color: #465b72;
+  font-size: 8px;
+}
+
+/* =========================================================
+   HEALTH
+========================================================= */
+
+.healthGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 14px;
+}
+
+.healthCard {
+  min-height: 64px;
+  display: grid;
+  grid-template-columns: 33px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 9px;
+  border: 1px solid #e4e9ee;
+  border-radius: 5px;
+}
+
+.healthIcon {
+  width: 33px;
+  height: 33px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  background: #edf8f3;
+  color: #299969;
+}
+
+.healthCard strong {
+  display: block;
+  color: #50647a;
+  font-size: 8px;
+}
+
+.healthCard span {
+  display: block;
+  margin-top: 3px;
+  color: #2b9a69;
+  font-size: 7px;
+}
+
+.healthCard b {
+  color: #5d7186;
+  font-size: 8px;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 10px 14px;
+  background: #f8fafc;
+  color: #8997a7;
+  font-size: 7px;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 11px 14px;
+  border-top: 1px solid #edf1f4;
+  color: #66798c;
+  font-size: 8px;
+  white-space: nowrap;
+}
+
+.runId {
+  color: #40566d;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.confidence {
+  color: #3f596f;
+}
+
+.runStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.runStatus i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.runStatus.completed {
+  color: #27835d;
+}
+
+.runStatus.completed i {
+  background: #28a26b;
+}
+
+.runStatus.partial {
+  color: #b17b1d;
+}
+
+.runStatus.partial i {
+  background: #dfa12a;
+}
+
+.moreButton {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #2675ce;
+  font-size: 7px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   CONTROL BAR
+========================================================= */
+
+.controlBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border: 1px solid #d9e3ed;
+  border-radius: 7px;
+  background: #f7fafc;
+}
+
+.controlInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.controlIcon {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background: #eaf3fb;
+  color: #2876b7;
+}
+
+.controlInfo strong {
+  display: block;
+  color: #40556b;
+  font-size: 9px;
+}
+
+.controlInfo p {
+  margin: 3px 0 0;
+  color: #8997a6;
+  font-size: 7px;
+}
+
+.controlActions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* =========================================================
+   NOTICE
+========================================================= */
+
+.notice {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 11px;
+  margin-bottom: 20px;
+  border: 1px solid #e4e9ee;
+  border-radius: 5px;
+  background: #fafbfc;
+  color: #8996a5;
+  font-size: 7px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+  .statusBanner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .statusMetrics {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .healthGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .configGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pageHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .headerActions {
+    width: 100%;
+  }
+
+  .secondaryButton,
+  .primaryButton {
+    flex: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  .statusMetrics {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .stage {
+    grid-template-columns: 28px 34px minmax(0, 1fr);
+  }
+
+  .stageMenu {
+    display: none;
+  }
+
+  .stageNumber {
+    width: 28px;
+    height: 28px;
+  }
+
+  .stageIcon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .healthGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .controlBar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .controlActions {
+    width: 100%;
+  }
+
+  .controlActions button {
+    flex: 1;
+  }
+}
