@@ -72,28 +72,44 @@ body {
   z-index: 1000;
 }
 
+/* =========================================================
+   ARSH LOGO
+========================================================= */
+
 .brand {
-  padding: 0 14px 26px;
+  width: 100%;
+  height: 112px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 8px 12px;
+
+  overflow: hidden;
 }
 
-.brand-name {
-  color: #ffffff;
+.brand-logo-link {
+  width: 100%;
+  height: 100%;
 
-  font-size: 29px;
-  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  font-weight: 750;
-
-  letter-spacing: 0.5px;
+  text-decoration: none;
 }
 
-.brand-subtitle {
-  margin-top: 8px;
+.brand-logo {
+  display: block;
 
-  color: #9eacbc;
+  width: 150px;
+  height: 88px;
 
-  font-size: 11px;
-  line-height: 1.45;
+  object-fit: contain;
+  object-position: center;
+
+  flex-shrink: 0;
 }
 
 /* =========================================================
